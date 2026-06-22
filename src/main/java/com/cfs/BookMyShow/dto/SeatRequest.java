@@ -1,0 +1,21 @@
+package com.cfs.BookMyShow.dto;
+
+import com.cfs.BookMyShow.entity.Seat;
+import com.cfs.BookMyShow.enums.SeatType;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class SeatRequest {
+    private String seatNumber;
+    private String seatRow;
+    private Integer seatColumn;
+    private SeatType seatType;
+    private Long screenId;
+}
